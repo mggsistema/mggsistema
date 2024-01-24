@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fontsgstatic.com" 
+    crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" 
+    rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comunicação</title>
+</head>
+
+<body>
+    
+    <div class="circulo"></div>
+
+    <img src="./img/img-logo.PNG" alt="logo comunicação" class="logo">
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2> Diferentes Recursos de <span>Comunicação</span></h2>
+            <p> Comunicação é de grande importância para a sociedade, as tecnologias 
+                que são o apreço pela cultura e a alegria pelo aprendizado. 
+                Conhecimento que deve ser construido como instrumento de cidadania 
+                para a vida social e para o trabalho.</p>
+
+            <button>Deixe o seu LIKE</button>
+            <button>Inicio</button>
+            <button>Fotos</button>
+            <button>Vídeos</button>
+            <button>Textos</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/img2-cromes.png" alt="cromes" class="cromes">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./img/img3-microfone.png" alt="microfone" class="microfone">
+        <img src="./img/img4-phone.png" alt="phone" class="phone">
+        <img src="./img/img5-notbook.jpg" alt="notbook" class="notbook">
+    </div>
+
+    
+</body>
+
+<script>
+let circulo = document.querySelector(".circulo")
+    let img2Cromes = document.querySelector(".cromes")
+    let img3Microfone = document.querySelector(".microfone")
+    let img4phone = document.querySelector(".phone") /* querySelector = pegador */
+    let img5Notbook = document.querySelector(".notbook")
+
+    img5Notbook.addEventListener("click", () => {
+        img2Cromes.src = "./img/img4-phone.png"
+        circulo.style.background = "#5F9EAD"
+    })
+    img3Microfone.addEventListener("click", () => {
+        img2Cromes.src = "./img/img2-cromes.png"
+        circulo.style.background = "#00008b"
+    })
+    img4phone.addEventListener("click", () => {
+        img2Cromes.src = "./img/img3-microfone.png"
+        circulo.style.background = "#87CEFA"
+    })
+
+</script>
+
+<!--IFRAME -->
+
+<iframe 
+width="310" 
+height="215" 
+src="https://www.youtube.com/embed/bT8auEPs6kE?si=sEbKw9rr3rvYrSIj" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen>
+</iframe>
+
+<iframe 
+width="310" 
+height="215" 
+src="https://www.youtube.com/embed/Iaa8FDK6fbY?si=j8ykR-uZWGv-BE91" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen>
+</iframe>
+
+<iframe 
+width="310" 
+height="215" 
+src="https://www.youtube.com/embed/4EjkmCMv4kM?si=BedJaYD-U4K1fAsZ" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
+
+<iframe 
+width="310" 
+height="215" 
+src="https://www.youtube.com/embed/WFkxjR5Ylj4?si=_zglt6WEZYWrbPGn" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen>
+</iframe>
+
+</html>
